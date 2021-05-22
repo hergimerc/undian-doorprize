@@ -23,7 +23,7 @@ const ubahLabelNama = () => {
     // Masukkan nama pemenang ke array
     pemenang.push(nama[idx]);
     // Remove nama dari array yang sudah dipilih agar tidak muncul lagi
-    nama.splice(idx);
+    nama.splice(idx, 1);
   }
 };
 
@@ -47,6 +47,6 @@ const berhenti = () => {
   btnBerhenti.classList.add("hidden");
   // 2. Remove class hidden dari btn mulai
   btnMulai.classList.remove("hidden");
-
+  console.log(nama);
   return false;
 };
